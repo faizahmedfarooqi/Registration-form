@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced Registration Form</title>
+    <style>
+        body {
+            background-image: url('https://via.placeholder.com/1200x800'); /* Placeholder image URL */
+            background-blend-mode: overlay;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(43, 88, 37, 0.801);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        form {
+            width: 400px;
+            padding: 20px;
+            margin: auto;
+            background-color: rgba(7, 187, 76, 0.8);
+            font-size: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            animation: slideIn 1s;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 8px;
+            font-size: 15px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 8px 16px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        textarea {
+            background-color: white;
+            font-size: 14px;
+            width: 90%;
+            margin: auto;
+            padding: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3 align="center">Advanced Registration Form</h3>
+        <table border="1">
+            <tr>
+                <td><label for="sname">Student name:</label></td>
+                <td><input type="text" id="sname" name="sname" /></td>
+            </tr>
+            <tr>
+                <td><label for="fname">Father name:</label></td>
+                <td><input type="text" id="fname" name="fname" /></td>
+            </tr>
+            <tr>
+                <td><label for="mname">Mother name:</label></td>
+                <td><input type="text" id="mname" name="mname" /></td>
+            </tr>
+            <tr>
+                <td><label for="DOB">Date Of Birth:</label></td>
+                <td><input type="date" id="DOB" name="date" /></td>
+            </tr>
+            <tr>
+                <td><label for="Gen">Gender:</label></td>
+                <td>
+                    <input type="radio" name="GENDER" value="MALE" />MALE
+                    <input type="radio" name="GENDER" value="FEMALE" />FEMALE
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mail">Email:</label></td>
+                <td><input type="text" id="mail" name="mail" /></td>
+            </tr>
+            <tr>
+                <td><label for="mno">Mobile No:</label></td>
+                <td><input type="text" id="mno" name="mno" /></td>
+            </tr>
+            <tr>
+                <td><label for="add">Address:</label></td>
+                <td><textarea id="add" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="stt">State:</label></td>
+                <td>
+                    <select>
+                        <option>Select</option>
+                        <option>Pakistan</option>
+                        <option>India</option>
+                        <option>London</option>
+                        <option>America</option>
+                        <option>Iraq</option>
+                        <option>Karbala</option>
+                        <option>AUSTRALIA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="cit">City:</label></td>
+                <td>
+                    <select>
+                        <option>Select</option>
+                        <option>Islamabad</option>
+                        <option>Delhi</option>
+                        <option>Moscow</option>
+                        <option>Abroad</option>
+                        <option>Sawat</option>
+                        <option>Sindh</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+    </form>
+
+    <a href="https://www.linkedin.com/in/faizahmedfarooqi" target="_blank">VISIT MY IDEA!</a>
+</body>
+</html>
